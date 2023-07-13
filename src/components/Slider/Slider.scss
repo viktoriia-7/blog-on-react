@@ -1,3 +1,47 @@
-.my-swiper {
-    color: blue;
+.slider-container {
+    position: relative;
+    margin-bottom: 80px;
+
+    .mySwiper {
+        width: 100%;
+        height: 100%;
+
+        img {
+            object-fit: cover;
+            width: 1170px;
+            height: 700px;
+        }
+    }
+
+    .slider-arrows {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+
+        .prev-arrow,
+        .next-arrow {
+            background-color: rgba(230, 230, 230, 0.267);
+            color: #ffffff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: rgba(252, 248, 248, 0.897);
+                color: black;
+            }
+        }
+    }
 }

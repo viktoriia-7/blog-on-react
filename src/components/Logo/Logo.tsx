@@ -6,13 +6,11 @@ type Props = {}
 
 const Logo = (props: Props) => {
     return (
-        <>
-            <Container>
-                <div className="logo">
-                    <img src={logo} alt="logo" />
-                </div>
-            </Container>
-        </>
+        <Container>
+            <div className="logo">
+                <img src={logo} alt="logo" />
+            </div>
+        </Container>
     )
 }
 export default Logo
