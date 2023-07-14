@@ -1,5 +1,4 @@
 import Logo from 'components/Logo/Logo'
-import PostList from 'components/Post/PostList'
 import { Container } from '@mui/material'
 import Slider from 'components/Slider/Slider'
 import SubscribeForm from 'components/Subscribe/SubscribeForm'
@@ -11,7 +10,6 @@ const Main = (props: Props) => {
             <Logo />
             <Slider />
             <SubscribeForm/>
-            <PostList />
         </Container>
     )
 }
