@@ -1,5 +1,4 @@
 import Header from 'Container/Header/Header'
-import InteriorPage from 'pages/InteriorPage'
 import { useLoaderData } from 'react-router-dom'
 import { InteriorPost } from 'pages/InteriorPage'
 import InteriorPageList, { listInteriorPost } from 'pages/InteriorPageList'

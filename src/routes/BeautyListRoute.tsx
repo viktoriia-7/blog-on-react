@@ -1,5 +1,4 @@
 import Header from 'Container/Header/Header'
-import BeautyPage from 'pages/BeautyPage'
 import { useLoaderData } from 'react-router-dom'
 import BeautyPageList, { listBeautyPost } from 'pages/BeautyPageList'
 import { BeautyPost } from 'pages/BeautyPage'
