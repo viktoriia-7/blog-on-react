@@ -11,7 +11,8 @@ const Main = (props: Props) => {
             <Logo />
             <Slider />
             <SubscribeForm />
-            <Reviews/>
+            <Reviews />
+            {/* <PostList/> */}
         </Container>
     )
 }
