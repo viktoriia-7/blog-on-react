@@ -69,8 +69,8 @@ const Reviews = (props: Props) => {
 
     return (
         <div>
-            <Typography variant="h4" component={'h2'}>
-                Reviews
+            <Typography variant="h5" component={'h2'}>
+                Reviews:
             </Typography>
             {review.map(({ name, text }, i) => (
                 <Card 
@@ -83,7 +83,7 @@ const Reviews = (props: Props) => {
                 >
                     <CardContent>
                         <div className="name-rewiew">{name}:</div>
-                        <div>{text}</div>
+                        <div className='text-rewiew'>{text}</div>
                     </CardContent>
                 </Card>
             ))}
@@ -91,7 +91,7 @@ const Reviews = (props: Props) => {
                 onSubmit={onSend}
                 style={{ display: 'flex', flexDirection: 'column' }}
             >
-                <h3>Please leave a review</h3>
+                {/* <h3>Please leave a review</h3>
                 <div>
                     <TextField
                         size="small"
@@ -112,7 +112,7 @@ const Reviews = (props: Props) => {
                 </div>
                 <Button variant="outlined" type="submit">
                     Send
-                </Button>
+                </Button> */}
             </form>
         </div>
     )

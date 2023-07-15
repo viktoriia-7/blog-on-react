@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .header-wrap {
     width: 1170px;
     height: 70px;
@@ -37,19 +45,33 @@ img {
     }
 }
 
+li {
+    list-style: none;
+}
+
 .name-rewiew {
     font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text-rewiew {
+    font-size: 14px;
 }
 
 .custom-textarea {
     width: 300px;
 }
 
-.content-page {
+.post-page {
     display: flex;
     flex-direction: column;
-
-    p {
+    .post-content {
         font-size: 18px;
     }
+}
+
+.like-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
