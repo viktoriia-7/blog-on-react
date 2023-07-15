@@ -1,3 +1,9 @@
+.header-wrap {
+    width: 1170px;
+    height: 70px;
+    border-bottom: 1px solid grey;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -16,26 +22,34 @@ img {
 .link-wrap {
     display: flex;
     justify-content: center;
-    text-align: end;
-
     .link {
         text-decoration: none;
         margin-right: 20px;
         font-size: 18px;
         color: black;
-        padding: 20px 40px;
-        // margin: 10px 40px;
+        padding: 10px 40px;
+        margin-top: 10px;
+
         &:hover {
-            
-            border-bottom: 2px solid rgb(221, 221, 221);
+            border: 1px solid black;
+            box-shadow: 5px 5px rgb(207, 206, 206);
         }
     }
 }
 
-.name-rewiew{
+.name-rewiew {
     font-weight: 700;
 }
 
-.custom-textarea{
+.custom-textarea {
     width: 300px;
+}
+
+.content-page {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 18px;
+    }
 }
