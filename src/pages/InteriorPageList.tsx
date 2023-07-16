@@ -21,7 +21,7 @@ const InteriorPageList = ({ posts }: Props) => {
                             alt="Exploring Interior Trends"
                         ></img>
                         <p>{post.content.substring(0, 1000)}</p>
-                        <a href={'/interior/' + post.id}>Read more...</a>
+                        <a href={'#/interior/' + post.id}>Read more...</a>
                     </li>
                 ))}
             </ul>

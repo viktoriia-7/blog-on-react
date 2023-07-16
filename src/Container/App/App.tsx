@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import {  createHashRouter, RouterProvider } from 'react-router-dom'
 import { CssBaseline, StyledEngineProvider } from '@mui/material'
 
 import Root from 'routes/root'
@@ -17,7 +17,7 @@ import InteriorListRoute, {
 } from 'routes/InteriorListRoute'
 import InteriorRoute, { loader as InteriorLoader } from 'routes/InteriorRoute'
 
-const router = createBrowserRouter([
+const router =  createHashRouter([
     {
         path: '/',
         element: <Root />,
