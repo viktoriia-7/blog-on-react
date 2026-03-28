@@ -21,7 +21,7 @@ const BeautyPageList = ({ posts }: Props) => {
                             alt="Exploring Beauty Trends"
                         ></img>
                         <p>{post.content.substring(0, 1000)}</p>
-                        <a href={'/beauty/' + post.id}>Read more...</a>
+                        <a href={'#/beauty/' + post.id}>Read more...</a>
                     </li>
                 ))}
             </ul>
