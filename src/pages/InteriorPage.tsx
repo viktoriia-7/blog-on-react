@@ -1,4 +1,5 @@
 import { Container } from '@mui/material'
+import Like from 'components/Like/Like'
 import Reviews from 'components/Rewiews/Rewiews'
 import interiorPostsArray from 'utils/interiorPostsArray'
 
@@ -23,7 +24,8 @@ const InteriorPage = ({ post }: Props) => {
             <h2>{post.title}</h2>
             <img src={post.imageUrl} alt="Exploring Interior Trends"></img>
             <p>{post.content}</p>
-            <Reviews/>
+            <Like id={post.id} />
+            <Reviews />
         </Container>
     )
 }

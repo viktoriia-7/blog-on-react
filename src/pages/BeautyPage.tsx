@@ -22,13 +22,17 @@ const BeautyPage = ({ post }: Props) => {
     return (
         <Container>
             <h1>Beauty</h1>
-            <div className="content-page">
-                <h2>{post.title}</h2>
-                <img src={post.imageUrl} alt="Exploring Beauty Trends"></img>
-                <p>{post.content}</p>
+            <div className="post-page">
+                <h2 className="post-title">{post.title}</h2>
+                <img
+                    className="post-image"
+                    src={post.imageUrl}
+                    alt="Exploring Beauty Trends"
+                ></img>
+                <p className="post-content">{post.content}</p>
+                <Like id={post.id} />
             </div>
             <Reviews />
-            <Like id={post.id} />
         </Container>
     )
 }

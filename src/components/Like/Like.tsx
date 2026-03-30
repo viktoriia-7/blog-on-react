@@ -2,7 +2,6 @@ import Button from '@mui/material/Button/Button'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useAppDispatch, useAppSelector } from 'assets/redux/hooks'
-// import { useAppDispatch, useAppSelector } from 'redux/hooks'
 
 type Props = {
     id: string
@@ -14,6 +13,7 @@ const Like = ({ id }: Props) => {
     return (
         <div>
             <Button
+                className="like-button"
                 variant="outlined"
                 onClick={() =>
                     dispatch({
@@ -22,7 +22,6 @@ const Like = ({ id }: Props) => {
                     })
                 }
             >
-                {/* <FavoriteIcon /> */}
                 {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
             </Button>
         </div>

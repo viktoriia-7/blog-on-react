@@ -1,8 +1,7 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Header from 'Container/Header/Header'
 import { CssBaseline, StyledEngineProvider } from '@mui/material'
-import Main from 'Container/Main/Main'
+
 import Root from 'routes/root'
 
 import BeautyRoute, { loader as BeautyLoader } from 'routes/BeautyRoute'
@@ -58,10 +57,6 @@ const App = () => {
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
-
-            {/* <Header /> */}
-
-            {/* <Main /> */}
             <RouterProvider router={router} />
         </StyledEngineProvider>
     )
