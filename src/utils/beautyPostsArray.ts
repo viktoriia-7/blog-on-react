@@ -10,7 +10,7 @@ const beautyPostsArray: BeautyPost[] = [
       title: 'The Ever-Evolving World of Fashion Trends',
       imageUrl: image1,
       content: `Fashion is a dynamic and ever-evolving industry, constantly reinventing itself with new trends and styles. From the runway to the streets, fashion trends capture our attention and provide us with a means of self-expression. They reflect the spirit of the times, the cultural influences, and the creative visions of designers worldwide.
-
+      
       Each season brings a fresh wave of trends, showcasing a diverse range of styles and aesthetics. Whether it's vibrant colors, bold prints, or unique silhouettes, fashion trends allow us to experiment with our personal style and embrace new looks. They inspire us to step outside our comfort zones, mix and match different pieces, and create outfits that reflect our individuality.
       
       Fashion trends are not limited to clothing alone; they extend to accessories, footwear, and even beauty. From statement handbags and oversized sunglasses to chunky sneakers and hair accessories, every detail contributes to the overall fashion statement. Trends in fashion encompass a wide range of styles, catering to various tastes and preferences.
