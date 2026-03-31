@@ -73,10 +73,11 @@ const Reviews = (props: Props) => {
                 Reviews
             </Typography>
             {review.map(({ name, text }, i) => (
-                <Card
+                <Card 
                     variant="outlined"
                     sx={{
-                        margin: '30px 0',
+                        margin: '20px 0',
+                        width:'700px',
                     }}
                     key={i}
                 >
