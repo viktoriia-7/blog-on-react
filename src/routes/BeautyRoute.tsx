@@ -1,30 +1,23 @@
 import Header from 'Container/Header/Header'
 import BeautyPage from 'pages/BeautyPage'
-import { Form, useLoaderData } from 'react-router-dom'
+import { useLoaderData } from 'react-router-dom'
+import { getBeautyPost } from 'pages/BeautyPage'
+import { BeautyPost } from 'pages/BeautyPage'
 
 export async function loader({ params }: any) {
-    console.log(params.postId)
-    const postId = params.postId
-    return { postId }
-}
-type Props = {
-    postId: string
+    const post = getBeautyPost(params.postId)
+    return post
 }
 
 const BeautyRoute = () => {
-    const postId = useLoaderData()
+    const post: BeautyPost | undefined = useLoaderData() as
+        | BeautyPost
+        | undefined
     return (
         <>
-            {postId}
             <Header />
-            <BeautyPage />
+            {post !== undefined ? <BeautyPage post={post} /> : <p>not found</p>}
         </>
     )
 }
 export default BeautyRoute
-
-// export default function BeautyRoute(props: Props) {
-//     const { postId } = useLoaderData()
-//     return <p>{postId}</p>
-//     // existing code
-// }

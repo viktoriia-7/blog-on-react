@@ -6,21 +6,22 @@ import { CssBaseline, StyledEngineProvider } from '@mui/material'
 import Main from 'Container/Main/Main'
 import Root from 'routes/root'
 import BeautyRoute, { loader as BeautyLoader } from 'routes/BeautyRoute'
+import BeautyListRoute, { loader as BeautyLoaderList } from 'routes/BeautyListRoute'
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
     },
-    // {
-    //     path: '/beauty',
-    //     element: <BeautyRoute />,
-    // },
+    {
+        path: '/beauty',
+        element: <BeautyListRoute />,
+        loader: BeautyLoaderList,
+    },
     {
         path: '/beauty/:postId',
-        element: <BeautyRoute  />,
+        element: <BeautyRoute />,
         loader: BeautyLoader,
-
     },
 ])
 const App = () => {
