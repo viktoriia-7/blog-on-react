@@ -1,5 +1,7 @@
 import { BeautyPost } from "pages/BeautyPage";
-import image1 from 'assets/posts-images/beauty_1.jpg'
+import image1 from 'assets/posts-images/beauty-1.jpg'
+import image2 from 'assets/posts-images/beauty-2.jpg'
+import image3 from 'assets/posts-images/beauty-3.jpg'
 
 
 const beautyPostsArray: BeautyPost[] = [
@@ -20,7 +22,7 @@ const beautyPostsArray: BeautyPost[] = [
     {
       id: '2',
       title: 'Embracing Sustainable Fashion Trends',
-      imageUrl: 'beauty-1.jpg',
+      imageUrl: image2,
       content: `As the world becomes more conscious of its environmental impact, sustainable fashion trends are gaining momentum and reshaping the industry. The fashion world is increasingly recognizing the need for eco-friendly practices, ethical sourcing, and mindful consumption. Sustainable fashion trends not only promote a more environmentally friendly approach but also embrace innovation and creativity.
 
       One significant trend within sustainable fashion is the rise of eco-conscious materials. Designers are incorporating organic fabrics, recycled materials, and innovative textiles made from renewable resources into their collections. From organic cotton and bamboo to recycled polyester and vegan leather, these materials reduce the fashion industry's reliance on non-renewable resources and contribute to a more sustainable future.
@@ -35,8 +37,8 @@ const beautyPostsArray: BeautyPost[] = [
     },
     {
       id: '3',
-      title: ' Fashion as a Means of Self-Expression',
-      imageUrl: 'beauty_1.jpg',
+      title: 'Fashion as a Means of Self-Expression',
+      imageUrl: image3,
       content: `Fashion is an art form that allows us to express our individuality, creativity, and personal style. It serves as a visual language, speaking volumes about who we are and how we want to be perceived by the world. Fashion trends may come and go, but the power of fashion as a means of self-expression remains constant.
 
       Clothing choices can reflect our personality, interests, and values. Whether it's a vintage-inspired outfit that exudes nostalgia, a sleek and modern ensemble that exudes confidence, or a vibrant and eclectic mix that showcases our adventurous spirit, fashion enables us to curate a visual representation of our unique selves.

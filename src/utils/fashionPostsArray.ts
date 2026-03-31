@@ -1,10 +1,14 @@
-const fashionPostsArray = [{
-  
-  posts: [
+import { FashionPost } from "pages/FashionPage";
+import image4 from 'assets/posts-images/fashion-1.jpg'
+import image5 from 'assets/posts-images/fashion-2.jpg'
+import image6 from 'assets/posts-images/fashion-3.jpg'
+
+
+const fashionPostsArray: FashionPost[] = [
     {
-      id: 4,
+      id: '4',
       title: 'The Ever-Evolving World of Fashion Trends',
-      imageUrl: 'beauty-1.jpg',
+      imageUrl: image4,
       content: `Fashion is a dynamic and ever-evolving industry, constantly reinventing itself with new trends and styles. From the runway to the streets, fashion trends capture our attention and provide us with a means of self-expression. They reflect the spirit of the times, the cultural influences, and the creative visions of designers worldwide.
 
       Each season brings a fresh wave of trends, showcasing a diverse range of styles and aesthetics. Whether it's vibrant colors, bold prints, or unique silhouettes, fashion trends allow us to experiment with our personal style and embrace new looks. They inspire us to step outside our comfort zones, mix and match different pieces, and create outfits that reflect our individuality.
@@ -16,9 +20,9 @@ const fashionPostsArray = [{
       The beauty of fashion trends lies in their ability to inspire and ignite creativity. They serve as a canvas for self-expression, allowing us to curate looks that reflect our personality and mood. So, embrace the ever-evolving world of fashion trends, have fun with your style, and let your wardrobe tell a story that is uniquely yours.`
     },
     {
-      id: 5,
+      id: '5',
       title: 'Embracing Sustainable Fashion Trends',
-      imageUrl: 'beauty-1.jpg',
+      imageUrl: image5,
       content: `As the world becomes more conscious of its environmental impact, sustainable fashion trends are gaining momentum and reshaping the industry. The fashion world is increasingly recognizing the need for eco-friendly practices, ethical sourcing, and mindful consumption. Sustainable fashion trends not only promote a more environmentally friendly approach but also embrace innovation and creativity.
 
       One significant trend within sustainable fashion is the rise of eco-conscious materials. Designers are incorporating organic fabrics, recycled materials, and innovative textiles made from renewable resources into their collections. From organic cotton and bamboo to recycled polyester and vegan leather, these materials reduce the fashion industry's reliance on non-renewable resources and contribute to a more sustainable future.
@@ -32,9 +36,9 @@ const fashionPostsArray = [{
       Fashion trends have the power to drive change, and sustainable fashion trends are leading the way towards a more conscious and responsible industry. By embracing these trends, we become part of a movement that values both style and sustainability. So, let's celebrate the beauty of sustainable fashion trends and make choices that align with our values and contribute to a more sustainable future. #SustainableFashion`
     },
     {
-      id: 6,
+      id: '6',
       title: ' Fashion as a Means of Self-Expression',
-      imageUrl: 'beauty_1.jpg',
+      imageUrl: image6,
       content: `Fashion is an art form that allows us to express our individuality, creativity, and personal style. It serves as a visual language, speaking volumes about who we are and how we want to be perceived by the world. Fashion trends may come and go, but the power of fashion as a means of self-expression remains constant.
 
       Clothing choices can reflect our personality, interests, and values. Whether it's a vintage-inspired outfit that exudes nostalgia, a sleek and modern ensemble that exudes confidence, or a vibrant and eclectic mix that showcases our adventurous spirit, fashion enables us to curate a visual representation of our unique selves.
@@ -50,6 +54,5 @@ const fashionPostsArray = [{
       Fashion is not about conforming to societal norms; it's about celebrating diversity, embracing self-expression, and feeling empowered in your own skin. So, wear what makes you feel like the best version of yourself, express your creativity through your wardrobe, and let fashion be a reflection of your unique personality. #FashionExpression`
     }
   ]
-}]
 
 export default fashionPostsArray;
