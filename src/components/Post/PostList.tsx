@@ -1,13 +1,22 @@
-import 'assets/style.scss'
+import PostListItem from './PostListItem'
 
-type Props = {}
-const PostList = (props: Props) => {
+type Props = {
+    posts: Array<{
+        id: number
+        title: string
+        content: string
+        imageUrl?: string
+    }>
+}
+
+const PostList = ({ posts }: Props) => {
     return (
-        <>
-            <div className="post">
-                <div className="post-content"></div>
-            </div>
-        </>
+        <div>
+            {posts.map((post) => (
+                <PostListItem key={post.id} post={post} />
+            ))}
+        </div>
     )
 }
-export default PostList
+
+export default PostList;
