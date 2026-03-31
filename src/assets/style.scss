@@ -1,7 +1,11 @@
-.logo img {
-    margin: 40px 250px;
-    height: 140px;
-    width: 500px;
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    img {
+        height: 140px;
+        width: 500px;
+    }
 }
 
 .post-content {
