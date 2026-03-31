@@ -2,6 +2,7 @@ import { Container } from '@mui/material'
 import Reviews from 'components/Rewiews/Rewiews'
 import beautyPostsArray from 'utils/beautyPostsArray'
 import 'assets/style.scss'
+import Like from 'components/Like/Like'
 
 export interface BeautyPost {
     id: string
@@ -20,13 +21,14 @@ export function getBeautyPost(postId: string): BeautyPost | undefined {
 const BeautyPage = ({ post }: Props) => {
     return (
         <Container>
-                <h1>Beauty</h1>
-                <div className="content-page">
+            <h1>Beauty</h1>
+            <div className="content-page">
                 <h2>{post.title}</h2>
                 <img src={post.imageUrl} alt="Exploring Beauty Trends"></img>
                 <p>{post.content}</p>
             </div>
             <Reviews />
+            <Like id={post.id} />
         </Container>
     )
 }
